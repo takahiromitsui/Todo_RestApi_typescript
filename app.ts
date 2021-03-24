@@ -4,6 +4,6 @@ import bodyParser from 'body-parser';
 import todoRoutes from './routes/todos';
 
 const app = express();
-app.use(todoRoutes);
 app.use(bodyParser.json());
+app.use(todoRoutes);
 app.listen(3000);
